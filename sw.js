@@ -27,6 +27,8 @@ var precacheUrls = [
 
   '/',
 
+  '/2020/09/03/20200903-feishu-bug-collection/',
+
   '/2020/09/02/20200902-feishu-robot/',
 
   '/2020/09/01/20200901-Composition-API/',
