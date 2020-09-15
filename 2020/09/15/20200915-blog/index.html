@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://yomxxx.github.io/assets/20200915-blog/img13.png">
 <meta property="og:image" content="https://yomxxx.github.io/assets/20200915-blog/img14.png">
 <meta property="article:published_time" content="2020-09-15T02:52:08.274Z">
-<meta property="article:modified_time" content="2020-09-15T06:24:44.995Z">
+<meta property="article:modified_time" content="2020-09-15T06:33:06.655Z">
 <meta property="article:author" content="lgc">
 <meta property="article:tag" content="serverless">
 <meta property="article:tag" content="hexo">
@@ -128,7 +128,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E7%9A%84"><span class="toc-number">1.</span> <span class="toc-text">目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E6%A0%88"><span class="toc-number">2.</span> <span class="toc-text">技术栈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%B7%E6%AD%A5"><span class="toc-number">3.</span> <span class="toc-text">起步</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%99%E4%BD%9C"><span class="toc-number"></span> <span class="toc-text">写作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-number">2.</span> <span class="toc-text">部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#guthub-page"><span class="toc-number">2.1.</span> <span class="toc-text">guthub page</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%85%BE%E8%AE%AF%E4%BA%91-Serverless-Framework%EF%BC%88https-console-cloud-tencent-com-sls%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">腾讯云 Serverless Framework（https:&#x2F;&#x2F;console.cloud.tencent.com&#x2F;sls）</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E7%9A%84"><span class="toc-number">1.</span> <span class="toc-text">目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E6%A0%88"><span class="toc-number">2.</span> <span class="toc-text">技术栈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%B7%E6%AD%A5"><span class="toc-number">3.</span> <span class="toc-text">起步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E4%BD%9C"><span class="toc-number">4.</span> <span class="toc-text">写作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98"><span class="toc-number">5.</span> <span class="toc-text">主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-number">6.</span> <span class="toc-text">部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#guthub-page"><span class="toc-number">6.1.</span> <span class="toc-text">guthub page</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%85%BE%E8%AE%AF%E4%BA%91-Serverless-Framework%EF%BC%88https-console-cloud-tencent-com-sls%EF%BC%89"><span class="toc-number">6.2.</span> <span class="toc-text">腾讯云 Serverless Framework（https:&#x2F;&#x2F;console.cloud.tencent.com&#x2F;sls）</span></a></li></ol></li></ol>
     </div>
   </span>
 </div>
@@ -195,16 +195,14 @@
 <p>我们可以在_config.yml 文件中<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration">配置</a>博客的基本信息：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">&quot;辰总的blog&quot;</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&quot;个人博客，技术文章，生活随笔，记录优秀的文章&quot;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&quot;JavaScript、Node、Vue、React、生活随笔、记录优秀的文章&quot;</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">&quot;JavaScript、Node、Vue、React、生活随笔、记录优秀的文章&quot;</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">lgc</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-cmn-Hans</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">&quot;Asia/Shanghai&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h1 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h1><p>我们写文章主要是在_posts 目录下,_drafts 是草稿目录，如果文章不想被发表，可暂时存放到这里：</p>
+<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><p>我们写文章主要是在_posts 目录下,_drafts 是草稿目录，如果文章不想被发表，可暂时存放到这里：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">├── source &#x2F;&#x2F; 协作主体文件</span><br><span class="line">|   ├── _drafts &#x2F;&#x2F; 草稿文件</span><br><span class="line">|   └── _posts &#x2F;&#x2F; 文章文件，所有文章都放在这里面即可</span><br></pre></td></tr></table></figure>
 
 <p>layout 布局文件夹。用于存放主题的模板文件，决定了网站内容的呈现方式，Hexo 内建 <a target="_blank" rel="noopener" href="https://github.com/node-swig/swig-templates">Swig</a> 模板引擎，您可以另外安装插件来获得 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-ejs">EJS</a>、<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-haml">Haml</a>、<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-jade">Jade</a> 或 <a target="_blank" rel="noopener" href="https://github.com/maxknee/hexo-render-pug">Pug</a> 支持，Hexo 根据模板文件的扩展名来决定所使用的模板引擎，例如：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">layout.ejs   - 使用 EJS</span><br><span class="line">layout.swig  - 使用 Swig</span><br></pre></td></tr></table></figure>
 
 <p>执行 hexo server 启动 hexo 本地服务器，可以看到项目生成了一个 demo 文章（hexo server -p xxxx，可自定义端口）：</p>
-<ul>
-<li>所有文章的写作使用的是<a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-tutorial.html">markdown</a>语法，文件名最好是日期-文章内容的方式（如：20200915-blog.md），后缀名是.md；</li>
-</ul>
+<p><em>所有文章的写作使用的是<a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-tutorial.html">markdown</a>语法，文件名最好是日期-文章内容的方式（如：20200915-blog.md），后缀名是.md；</em></p>
 <p><img src="/assets/20200915-blog/img1.png" alt="image-20200911172630511"></p>
 <p>Front-matter</p>
 <p>Front-matter 是文件最上方以 — 分隔的区域，用于指定个别文件的变量，举例来说：</p>
@@ -324,9 +322,7 @@
 <h3 id="腾讯云-Serverless-Framework（https-console-cloud-tencent-com-sls）"><a href="#腾讯云-Serverless-Framework（https-console-cloud-tencent-com-sls）" class="headerlink" title="腾讯云 Serverless Framework（https://console.cloud.tencent.com/sls）"></a>腾讯云 Serverless Framework（<a target="_blank" rel="noopener" href="https://console.cloud.tencent.com/sls%EF%BC%89">https://console.cloud.tencent.com/sls）</a></h3><blockquote>
 <p>Serverless Framework 是业界非常受欢迎的无服务器应用框架，开发者无需关心底层资源即可部署完整可用的 Serverless 应用架构。Serverless Framework 具有资源编排、自动伸缩、事件驱动等能力，覆盖编码、调试、测试、部署等全生命周期，帮助开发者通过联动云资源，迅速构建 Serverless 应用。</p>
 </blockquote>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://cloud.tencent.com/document/product/1154">文档地址</a></li>
-</ul>
+<p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/document/product/1154">文档地址</a></p>
 <p>首先开通服务，然后创建一个项目=&gt;选择快速部署一个 Vue 项目；</p>
 <p><img src="/assets/20200915-blog/img11.png" alt="image-20200911172630511"></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装</span></span><br><span class="line">$ npm install -g serverless</span><br><span class="line">$ serverless init vue-starter --name my-vue.js-app</span><br><span class="line"><span class="comment"># 部署</span></span><br><span class="line">$ <span class="built_in">cd</span> my-vue.js-app &amp;&amp; serverless deploy</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -390,7 +386,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E7%9A%84"><span class="toc-number">1.</span> <span class="toc-text">目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E6%A0%88"><span class="toc-number">2.</span> <span class="toc-text">技术栈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%B7%E6%AD%A5"><span class="toc-number">3.</span> <span class="toc-text">起步</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%99%E4%BD%9C"><span class="toc-number"></span> <span class="toc-text">写作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-number">2.</span> <span class="toc-text">部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#guthub-page"><span class="toc-number">2.1.</span> <span class="toc-text">guthub page</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%85%BE%E8%AE%AF%E4%BA%91-Serverless-Framework%EF%BC%88https-console-cloud-tencent-com-sls%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">腾讯云 Serverless Framework（https:&#x2F;&#x2F;console.cloud.tencent.com&#x2F;sls）</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E7%9A%84"><span class="toc-number">1.</span> <span class="toc-text">目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E6%A0%88"><span class="toc-number">2.</span> <span class="toc-text">技术栈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%B7%E6%AD%A5"><span class="toc-number">3.</span> <span class="toc-text">起步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E4%BD%9C"><span class="toc-number">4.</span> <span class="toc-text">写作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98"><span class="toc-number">5.</span> <span class="toc-text">主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-number">6.</span> <span class="toc-text">部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#guthub-page"><span class="toc-number">6.1.</span> <span class="toc-text">guthub page</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%85%BE%E8%AE%AF%E4%BA%91-Serverless-Framework%EF%BC%88https-console-cloud-tencent-com-sls%EF%BC%89"><span class="toc-number">6.2.</span> <span class="toc-text">腾讯云 Serverless Framework（https:&#x2F;&#x2F;console.cloud.tencent.com&#x2F;sls）</span></a></li></ol></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
@@ -514,7 +510,7 @@
 
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1600151089312')
+  navigator.serviceWorker.register('/sw.js?t=1600151602086')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
