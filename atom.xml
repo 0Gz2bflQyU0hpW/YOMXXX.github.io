@@ -37,9 +37,9 @@
     <category term="博客" scheme="https://yomxxx.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="serverless" scheme="https://yomxxx.github.io/tags/serverless/"/>
-    
     <category term="hexo" scheme="https://yomxxx.github.io/tags/hexo/"/>
+    
+    <category term="serverless" scheme="https://yomxxx.github.io/tags/serverless/"/>
     
   </entry>
   
